@@ -19,6 +19,7 @@ const styles = theme => ({
   },
   featureGrid: {
     marginBottom: "25px",
+    marginTop: "25px"
   },
   avi: {
     width: "40px",
@@ -35,26 +36,10 @@ const HomeFeatures = props => {
       justify="center"
       spacing={8}
     >
-      <Grid item md={6}>
+      <Grid item>
         <Chip
-          avatar={
-            <Avatar className={props.classes.avi}>
-              <Robot />
-            </Avatar>
-          }
-          className={props.classes.featureChipRight}
-          label="Uses Material UI"
-        />
-      </Grid>
-      <Grid item md={6}>
-        <Chip
-          avatar={
-            <Avatar className={props.classes.avi}>
-              <Robot />
-            </Avatar>
-          }
           className={props.classes.featureChip}
-          label="Uses Material Icons"
+          label="Book Now"
         />
       </Grid>
     </Grid>

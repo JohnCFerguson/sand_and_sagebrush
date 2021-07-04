@@ -1,16 +1,16 @@
 module.exports = {
   pathPrefix: "/gatsby-material-ui-business-starter",
   siteMetadata: {
-    title: "Gatsby Material UI Business Starter",
+    title: "Sand and Sagebrush Salon and Spa",
     contact: {
-      phone: "503-555-1111",
-      email: "hi@foxandgeese.com",
+      phone: "775 ... idk yet",
+      email: "maddie@sandandsagebrush.com",
     },
     menuLinks: [
-      {
+      /*{
         name: "Products",
         link: "/products",
-      },
+      },*/
       {
         name: "Team",
         link: "/team",

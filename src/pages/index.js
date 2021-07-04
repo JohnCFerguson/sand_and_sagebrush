@@ -17,39 +17,18 @@ const styles = () => ({
   },
 });
 const Home = props => {
-  const products = props.data.allMarkdownRemark.edges;
+  //const products = props.data.allMarkdownRemark.edges;
   return (
-    <Page title="Gatsby Material UI Business Starter">
+    <Page title="The Beautiful Sand and Sagebrush Salon and Spa">
       <SEO title="Home">
         <meta
-          content="Beautiful Gatsby Material UI Business Starter. Tiny code. Well organized. Ready to customize and go."
+          content="A beautiful, open Salon and Spa where the most amazing personnel will take care of your Salon and Spa Needs"
           name="description"
         />
       </SEO>
 
       <HomeFeatures />
-      <Card
-        action={
-          <Button
-            className={props.classes.root}
-            color="secondary"
-            component={Link}
-            to="/products"
-            variant="contained"
-          >
-            View All Products
-          </Button>
-        }
-        avatar={
-          <Avatar>
-            <Gift />
-          </Avatar>
-        }
-        style={{ minHeight: 523 }}
-        title="Our Products"
-      >
-        <Carousel items={products} />
-      </Card>
+
     </Page>
   );
 };
@@ -64,7 +43,7 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/products/" } }
+      filter: { fileAbsolutePath: { regex: "/team/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -86,3 +65,26 @@ export const query = graphql`
 `;
 
 export default withRoot(withStyles(styles)(Home));
+
+/*      <Card
+        action={
+          <Button
+            className={props.classes.root}
+            color="secondary"
+            component={Link}
+            to="/team"
+            variant="contained"
+          >
+            View All Products
+          </Button>
+        }
+        avatar={
+          <Avatar>
+            <Gift />
+          </Avatar>
+        }
+        style={{ minHeight: 523 }}
+        title="Our Products"
+      >
+        <Carousel items={products} />
+      </Card>*/

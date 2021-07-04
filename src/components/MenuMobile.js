@@ -4,6 +4,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import IconButton from "@material-ui/core/IconButton";
+import { Instagram, ClockOutline, ClockOut } from "mdi-material-ui";
 import { DotsVertical } from "mdi-material-ui";
 import withStyles from "@material-ui/styles/withStyles";
 
@@ -16,10 +17,21 @@ const styles = {
 class MenuMobile extends React.Component {
   state = {
     anchorEl: null,
+    open: false,
   };
 
-  handleOpen = event => {
-    this.setState({ anchorEl: event.currentTarget });
+  handleClick = (event) => {
+    const { currentTarget } = event;
+    this.setState((state) => ({
+      anchorEl: currentTarget,
+      open: !state.open
+    }));
+  };
+
+  handleClickAway = () => {
+    this.setState({
+      open: false
+    });
   };
 
   handleClose = () => {
@@ -38,10 +50,10 @@ class MenuMobile extends React.Component {
     } = this.props;
     return (
       <>
-        <IconButton onClick={this.handleOpen}>
+        <IconButton onClick={this.handleClick}>
           <DotsVertical className={classes.dotsVerticalIcon} />
         </IconButton>
-        <ClickAwayListener onClickAway={this.handleClose}>
+        <ClickAwayListener onClickAway={this.handleClickAway}>
           <Menu
             anchorEl={anchorEl}
             onClose={this.handleClose}
@@ -53,11 +65,13 @@ class MenuMobile extends React.Component {
               </Link>
             ))}
             <a
-              href="https://github.com/bluepeter/gatsby-material-ui-business-starter"
+              href="https://www.instagram.com/sandandsagebrush/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <MenuItem>Fork me on Github</MenuItem>
+              <IconButton className={classes.menuButton}>
+                <Instagram />
+              </IconButton>
             </a>
           </Menu>
         </ClickAwayListener>

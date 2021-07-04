@@ -40,11 +40,7 @@ const Footer = withStyles(styles)(props => {
               <br />
             </Hidden>{" "}
             {email} – {phone}
-            <br />
             &middot;
-            <br />
-            Starter created by{" "}
-            <a href="https://foxandgeese.com">Fox and Geese</a>
           </Typography>
         </span>
       </footer>

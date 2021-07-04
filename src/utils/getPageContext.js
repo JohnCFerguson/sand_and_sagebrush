@@ -10,14 +10,14 @@ import green from "@material-ui/core/colors/green";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      light: purple[300],
-      main: purple[500],
-      dark: purple[700],
+      light: '#f1dcd4',
+      main: '#f1dcd4',
+      dark: '#f1dcd4'
     },
     secondary: {
-      light: green[300],
-      main: green[500],
-      dark: green[700],
+      light: '#8a807b',
+      main: '#8a807b',
+      dark: '#8a807b',
     },
   },
   typography: {

@@ -23,7 +23,7 @@ const SEO = props => (
 );
 
 SEO.defaultProps = {
-  keywords: [],
+  keywords: ['sand','sagebrush','sage','brush','elko','nevade','nv','salon','spa'],
   lang: "en",
   meta: [],
 };

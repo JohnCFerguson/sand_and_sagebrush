@@ -1,9 +1,9 @@
-import withRoot from "../../utils/withRoot";
+import withRoot from "../../src/utils/withRoot";
 import React from "react";
 import { graphql } from "gatsby";
-import SEO from "../../components/SEO";
-import Page from "../../components/Page";
-import List from "../../components/List";
+import SEO from "../../src/components/SEO";
+import Page from "../../src/components/Page";
+import List from "../../src/components/List";
 
 const Products = props => {
   const products = props.data.allMarkdownRemark.edges;
@@ -38,3 +38,4 @@ export const query = graphql`
 `;
 
 export default withRoot(Products);
+
