@@ -1,0 +1,92 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/styles.d7dc985b58c87a07abc6.css
+  Cache-Control: public, max-age=31536000, immutable
+/commons-e9cd7d7e523957992d9e.js
+  Cache-Control: public, max-age=31536000, immutable
+/8f7e4e64c6847170162de142bac24032a841b9c5-5e4527bcbb237fcd9d4e.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-team-js-b524de3efd12d93946af.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-f92a26211ed780614ea7.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-js-b02c092ccb756fdae6c8.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-team-index-js-859b6e22095095f9f6de.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-8a8e10d913103f715bbc.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-a7efea13cdacfac85c79.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-dbd57bdbf280dee5e5f6.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
+/sang_&_sagebrush/team/dolly-burperlous
+  Link: </sang_&_sagebrush/webpack-runtime-8a8e10d913103f715bbc.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/framework-a7efea13cdacfac85c79.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/app-dbd57bdbf280dee5e5f6.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/commons-e9cd7d7e523957992d9e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/8f7e4e64c6847170162de142bac24032a841b9c5-5e4527bcbb237fcd9d4e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/component---src-templates-team-js-b524de3efd12d93946af.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </sang_&_sagebrush/page-data/team/dolly-burperlous/page-data.json>; rel=preload; as=fetch; crossorigin
+/sang_&_sagebrush/team/george-geppetto
+  Link: </sang_&_sagebrush/webpack-runtime-8a8e10d913103f715bbc.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/framework-a7efea13cdacfac85c79.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/app-dbd57bdbf280dee5e5f6.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/commons-e9cd7d7e523957992d9e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/8f7e4e64c6847170162de142bac24032a841b9c5-5e4527bcbb237fcd9d4e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/component---src-templates-team-js-b524de3efd12d93946af.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </sang_&_sagebrush/page-data/team/george-geppetto/page-data.json>; rel=preload; as=fetch; crossorigin
+/sang_&_sagebrush/team/teddy-von-tumpletumple
+  Link: </sang_&_sagebrush/webpack-runtime-8a8e10d913103f715bbc.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/framework-a7efea13cdacfac85c79.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/app-dbd57bdbf280dee5e5f6.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/commons-e9cd7d7e523957992d9e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/8f7e4e64c6847170162de142bac24032a841b9c5-5e4527bcbb237fcd9d4e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/component---src-templates-team-js-b524de3efd12d93946af.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </sang_&_sagebrush/page-data/team/teddy-von-tumpletumple/page-data.json>; rel=preload; as=fetch; crossorigin
+/sang_&_sagebrush/404/
+  Link: </sang_&_sagebrush/webpack-runtime-8a8e10d913103f715bbc.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/framework-a7efea13cdacfac85c79.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/app-dbd57bdbf280dee5e5f6.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/commons-e9cd7d7e523957992d9e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/component---src-pages-404-js-f92a26211ed780614ea7.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </sang_&_sagebrush/page-data/404/page-data.json>; rel=preload; as=fetch; crossorigin
+/sang_&_sagebrush/404.html
+  Link: </sang_&_sagebrush/webpack-runtime-8a8e10d913103f715bbc.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/framework-a7efea13cdacfac85c79.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/app-dbd57bdbf280dee5e5f6.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/commons-e9cd7d7e523957992d9e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/component---src-pages-404-js-f92a26211ed780614ea7.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </sang_&_sagebrush/page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin
+/sang_&_sagebrush/
+  Link: </sang_&_sagebrush/webpack-runtime-8a8e10d913103f715bbc.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/framework-a7efea13cdacfac85c79.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/app-dbd57bdbf280dee5e5f6.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/commons-e9cd7d7e523957992d9e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/8f7e4e64c6847170162de142bac24032a841b9c5-5e4527bcbb237fcd9d4e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/component---src-pages-index-js-b02c092ccb756fdae6c8.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </sang_&_sagebrush/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/sang_&_sagebrush/team/
+  Link: </sang_&_sagebrush/webpack-runtime-8a8e10d913103f715bbc.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/framework-a7efea13cdacfac85c79.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/app-dbd57bdbf280dee5e5f6.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/commons-e9cd7d7e523957992d9e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/8f7e4e64c6847170162de142bac24032a841b9c5-5e4527bcbb237fcd9d4e.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/component---src-pages-team-index-js-859b6e22095095f9f6de.js>; rel=preload; as=script
+  Link: </sang_&_sagebrush/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </sang_&_sagebrush/page-data/team/page-data.json>; rel=preload; as=fetch; crossorigin
