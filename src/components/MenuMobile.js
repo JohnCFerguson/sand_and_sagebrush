@@ -4,15 +4,22 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import IconButton from "@material-ui/core/IconButton";
-import { Instagram, ClockOutline, ClockOut } from "mdi-material-ui";
+import { Instagram } from "mdi-material-ui";
 import { DotsVertical } from "mdi-material-ui";
 import withStyles from "@material-ui/styles/withStyles";
+import "./../css/typography.css";
 
-const styles = {
+const styles = theme => ({
   dotsVerticalIcon: {
     color: "#efefef",
   },
-};
+  menuItems: {
+    alignItem: "center",
+    textAlign: "center",
+    fontFamily: "StayClassyDuoSerif",
+    color: theme.palette.secondary.dark,
+  },
+});
 
 class MenuMobile extends React.Component {
   state = {
@@ -58,10 +65,11 @@ class MenuMobile extends React.Component {
             anchorEl={anchorEl}
             onClose={this.handleClose}
             open={Boolean(anchorEl)}
+            className={classes.menuItems}
           >
             {menuLinks.map(link => (
-              <Link key={link.name} to={link.link}>
-                <MenuItem>{link.name}</MenuItem>
+              <Link key={link.name} to={link.link} >
+                <MenuItem className={classes.menuItems}>{link.name}</MenuItem>
               </Link>
             ))}
             <a

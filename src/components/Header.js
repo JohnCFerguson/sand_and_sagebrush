@@ -9,17 +9,26 @@ import Grid from "@material-ui/core/Grid";
 import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
 import Typography from "@material-ui/core/Typography";
-import Chip from "@material-ui/core/Chip";
-import Avatar from "@material-ui/core/Avatar"
-import logo from "../logos/S+S-Logo-0221_Full Color Logo Horizontal .png"
+import logo from "./../pages/logos/S+S-Logo-0221_Full Color Logo Horizontal .png"
 
 const useStyles = makeStyles({
   logo: {
     maxWidth: 500,
+    marginTop: -15,
+    marginLeft: -40,
+    marginBottom: -35,
     "@media (max-width: 1280px)": {
-      maxWidth: 200
+      maxWidth: 250,
+      marginTop: -10,
+      marginLeft: -20,
+      marginBottom: -25
     }
   },
+  gridStyle: {
+    "@media (max-width: 1280px)": {
+      padding: 10
+    }
+  }
 });
 
 
@@ -29,12 +38,12 @@ const Header = props => {
   return (
     <AppBar id="appBar">
       <Toolbar>
-        <Grid alignItems="center" container justify="space-between" spacing={8}>
+        <Grid alignItems="center" container justify="space-between" spacing={1}>
           <Link to="/">
             <img src={logo} alt="Sand+Sagebrush Logo img" className={classes.logo} />
           </Link>
           <Grid item />
-          <Grid item>
+          <Grid item className={classes.gridStyle}>
             <Hidden smDown>
               <Typography component="span" variant="caption">
                 <Menu />
@@ -61,6 +70,7 @@ export default () => (
             contact {
               email
               phone
+              address
             }
           }
         }

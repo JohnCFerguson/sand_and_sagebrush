@@ -4,12 +4,18 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import withStyles from "@material-ui/styles/withStyles";
+import "./../css/typography.css";
 
-const styles = {
+const styles = theme => ({
   cardActions: {
     float: "right",
   },
-};
+  cardFont: {
+    fontFamily: "StayClassyDuoSerif",
+    textAlign: "center",
+    color: theme.palette.secondary.dark,
+  }
+});
 
 const MyCard = ({
   children,
@@ -20,14 +26,17 @@ const MyCard = ({
   action,
   style = {},
 }) => (
-  <Card style={style}>
+  <Card style={style} className={classes.cardFont}>
     <CardHeader
       avatar={avatar ? avatar : null}
       subheader={subheader ? subheader : null}
       title={title}
+      classes={{
+        title: classes.cardFont
+      }} 
     />
     <CardContent>{children}</CardContent>
-    <CardActions className={classes.cardActions}>{action}</CardActions>
+    <CardActions className={classes.cardActions, classes.cardFont}>{action}</CardActions>
   </Card>
 );
 

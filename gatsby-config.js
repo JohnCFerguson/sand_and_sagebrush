@@ -5,14 +5,19 @@ module.exports = {
     contact: {
       phone: "775 ... idk yet",
       email: "maddie@sandandsagebrush.com",
+      address: "431 Idaho St. Elko, NV 89801"
     },
     menuLinks: [
-      /*{
-        name: "Products",
-        link: "/products",
-      },*/
       {
-        name: "Team",
+        name: "Book Now",
+        link: "/book"
+      },
+      {
+        name: "The Salon",
+        link: "/salon",
+      },
+      {
+        name: "The Team",
         link: "/team",
       },
     ],
@@ -30,5 +35,25 @@ module.exports = {
         name: "pages",
       },
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
   ],
 };

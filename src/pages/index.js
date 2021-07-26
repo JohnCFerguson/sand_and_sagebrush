@@ -1,25 +1,26 @@
 import withRoot from "../utils/withRoot";
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql, } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import SEO from "../components/SEO";
-import Card from "../components/Card";
 import Page from "../components/Page";
 import HomeFeatures from "../components/HomeFeatures";
-import Button from "@material-ui/core/Button";
-import Carousel from "../components/Carousel";
-import Avatar from "@material-ui/core/Avatar";
-import { Gift } from "mdi-material-ui";
 import withStyles from "@material-ui/styles/withStyles";
+import "./../css/typography.css";
+
 
 const styles = () => ({
   root: {
     fontWeight: "bold",
+    fontFamily: "StayClassyDuoSerrif"
   },
 });
+
 const Home = props => {
-  //const products = props.data.allMarkdownRemark.edges;
+  const logoImg = getImage(props.data.allFile.edges[0].node);
+  //console.log(logoImg);
   return (
-    <Page title="The Beautiful Sand and Sagebrush Salon and Spa">
+    <Page title="The Beautiful Sand and Sagebrush Salon and Spa" image={logoImg}>
       <SEO title="Home">
         <meta
           content="A beautiful, open Salon and Spa where the most amazing personnel will take care of your Salon and Spa Needs"
@@ -34,30 +35,15 @@ const Home = props => {
 };
 
 export const query = graphql`
-  query {
-    allFile(filter: { extension: { eq: "jpg" } }) {
-      edges {
-        node {
-          publicURL
-        }
-      }
-    }
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/team/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+  query LogoQuery {
+    allFile(
+      filter: {relativePath: {eq: "logos/S+S-Logo-0221_Full_Color_Logo_Vertical_Cropped.png"}}
     ) {
       edges {
         node {
-          id
-          frontmatter {
-            image {
-              publicURL
-            }
-            path
-            title
-            date(formatString: "DD MMMM YYYY")
+          childImageSharp {
+            gatsbyImageData
           }
-          excerpt
         }
       }
     }
@@ -65,26 +51,3 @@ export const query = graphql`
 `;
 
 export default withRoot(withStyles(styles)(Home));
-
-/*      <Card
-        action={
-          <Button
-            className={props.classes.root}
-            color="secondary"
-            component={Link}
-            to="/team"
-            variant="contained"
-          >
-            View All Products
-          </Button>
-        }
-        avatar={
-          <Avatar>
-            <Gift />
-          </Avatar>
-        }
-        style={{ minHeight: 523 }}
-        title="Our Products"
-      >
-        <Carousel items={products} />
-      </Card>*/

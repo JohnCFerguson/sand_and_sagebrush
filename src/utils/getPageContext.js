@@ -1,13 +1,14 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
 import { SheetsRegistry } from "jss";
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import { createGenerateClassName } from "@material-ui/styles";
 import purple from "@material-ui/core/colors/purple";
 import green from "@material-ui/core/colors/green";
+import "../css/typography.css"
 
 // A theme with custom primary and secondary color.
 // It's optional.
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       light: '#f1dcd4',

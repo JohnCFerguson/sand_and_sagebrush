@@ -23,7 +23,7 @@ const Footer = withStyles(styles)(props => {
       site: {
         siteMetadata: {
           title,
-          contact: { email, phone },
+          contact: { email, phone, address },
         },
       },
     },
@@ -40,7 +40,8 @@ const Footer = withStyles(styles)(props => {
               <br />
             </Hidden>{" "}
             {email} – {phone}
-            &middot;
+              <br />
+            {address}
           </Typography>
         </span>
       </footer>
@@ -58,6 +59,7 @@ export default () => (
             contact {
               email
               phone
+              address
             }
           }
         }

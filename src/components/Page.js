@@ -2,12 +2,12 @@ import React from "react";
 import { Link, withPrefix } from "gatsby";
 import { Card, CardMedia, Grid, Typography } from "@material-ui/core";
 import withStyles from "@material-ui/styles/withStyles";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../css/style.styl";
-import Logo from "../logos/S+S-Logo-0221_Full_Color_Logo_Vertical.png"
 
-const styles = {
+const styles = theme => ({
   container: {
     marginTop: 94,
   },
@@ -18,20 +18,17 @@ const styles = {
   title: {
     textAlign: "center",
   },
-  card: {
-    
-  },
   cardMedia: {
     backgroundColor: 'transparent',
     justifyContent: 'center'
   },
   img: {
     width: '100%',
-    height: '90%'
   }
-};
+});
 
-const Component = ({ children, classes, title }) => {
+const Component = ({ children, classes, title, image }) => {
+  console.log(image)
   return (
     <>
       <Header />
@@ -47,7 +44,7 @@ const Component = ({ children, classes, title }) => {
             <CardMedia
               className={classes.cardMedia}
             >
-              <img src={Logo} className={classes.img}/>
+              <GatsbyImage image={image} alt="sang + sagebrush logo" />
             </CardMedia>
           </Card>
           ) : null}
