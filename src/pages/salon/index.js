@@ -1,6 +1,7 @@
 import withRoot from "../../utils/withRoot";
 import React from "react";
 import { graphql, } from "gatsby";
+import Typography from "@material-ui/core/Typography";
 import SEO from "../../components/SEO";
 import Page from "../../components/Page";
 import Card from "../../components/Card";
@@ -17,6 +18,8 @@ const Salon = props => {
       <Card
         title="The Salon"
       >
+        <Typography>Welcome to Sand and Sagebrush, an Aveda salon located right in the heart of downtown Elko Nevada. At Sand and Sagebrush our mission is to always provide our guests with a one of a kind service. Through thoughtful care,  kindness, and attention to detail our goal is ensure an experience and environment where confidence and self love are abundant.</Typography>
+        <hr></hr>
         <Gallery images={salon} />
       </Card>
     </Page>
@@ -25,13 +28,13 @@ const Salon = props => {
 
 export const query = graphql`
   query {
-    allFile(filter: {extension: {eq: "jpeg"}, absolutePath: {regex: "/salon/"}}) {
+    allFile(filter: {extension: {eq: "jpg"}, absolutePath: {regex: "/salon/"}}) {
       edges {
         node {
           childImageSharp {
             thumb: gatsbyImageData(
-              width: 270
-              height: 270
+              width: 300
+              height: 300
               placeholder: BLURRED
             )
             full: gatsbyImageData(layout: FULL_WIDTH)

@@ -35,7 +35,7 @@ const MyCard = ({
         title: classes.cardFont
       }} 
     />
-    <CardContent>{children}</CardContent>
+    <CardContent className={classes.cardFont}>{children}</CardContent>
     <CardActions className={classes.cardActions, classes.cardFont}>{action}</CardActions>
   </Card>
 );

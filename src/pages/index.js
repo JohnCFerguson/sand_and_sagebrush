@@ -23,7 +23,7 @@ const Home = props => {
     <Page title="The Beautiful Sand and Sagebrush Salon and Spa" image={logoImg}>
       <SEO title="Home">
         <meta
-          content="A beautiful, open Salon and Spa where the most amazing personnel will take care of your Salon and Spa Needs"
+          content="Welcome to Sand and Sagebrush, an Aveda salon located right in the heart of downtown Elko Nevada. At Sand and Sagebrush our mission is to always provide our guests with a one of a kind service. Through thoughtful care,  kindness, and attention to detail our goal is ensure an experience and environment where confidence and self love are abundant."
           name="description"
         />
       </SEO>
