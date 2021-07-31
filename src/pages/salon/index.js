@@ -5,16 +5,13 @@ import Typography from "@material-ui/core/Typography";
 import SEO from "../../components/SEO";
 import Page from "../../components/Page";
 import Card from "../../components/Card";
-
 import Gallery from '@browniebroke/gatsby-image-gallery'
-
 
 const Salon = props => {
   const salon =  props.data.allFile.edges.map(({ node }) => node.childImageSharp)
   return (
     <Page title="The Salon">
       <SEO title="The Salon" />
-
       <Card
         title="The Salon"
       >
