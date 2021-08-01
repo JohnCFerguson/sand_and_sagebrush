@@ -24,6 +24,7 @@ const Footer = withStyles(styles)(props => {
         siteMetadata: {
           title,
           contact: { email, phone, address },
+          development: { company, devEmail }
         },
       },
     },
@@ -39,9 +40,13 @@ const Footer = withStyles(styles)(props => {
             <Hidden only={["xl", "lg", "md"]}>
               <br />
             </Hidden>{" "}
-            {email} – {phone}
+            <a href={`mailto:${email}`}>{email}</a> – <a href={`tel:+${phone}`}>{phone}</a>
               <br />
             {address}
+            <Divider className={classes.divider} />
+            Website developed by:
+              <br />
+            {company} - <a href={`mailto:${devEmail}`}>{devEmail}</a>
           </Typography>
         </span>
       </footer>
@@ -60,6 +65,10 @@ export default () => (
               email
               phone
               address
+            }
+            development {
+              company
+              devEmail
             }
           }
         }

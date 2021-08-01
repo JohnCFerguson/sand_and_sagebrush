@@ -38,7 +38,7 @@ const HomeFeatures = props => {
     >
       <Grid item>
         <Link key="bookNow" to="/book">
-          <Button variant="outlined" color="secondary" size="large">
+          <Button color="secondary" size="large" variant="outlined">
             Book Now
           </Button>
         </Link>

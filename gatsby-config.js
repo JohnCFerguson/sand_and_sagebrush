@@ -7,6 +7,10 @@ module.exports = {
       email: "maddie@sandandsagebrush.com",
       address: "431 Idaho St. Elko, NV 89801"
     },
+    development: {
+      company: "Unfergettable Designs, LLC",
+      devEmail: "john@unfergettabledesigns.com"
+    },
     menuLinks: [
       {
         name: "Book Now",
@@ -36,14 +40,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sharp`,
+      resolve: "gatsby-plugin-sharp",
       options: {
         defaults: {
-          formats: [`auto`, `webp`],
-          placeholder: `dominantColor`,
+          formats: ["auto", "webp"],
+          placeholder: "dominantColor",
           quality: 50,
           breakpoints: [],
-          backgroundColor: `transparent`,
+          backgroundColor: "transparent",
           tracedSVGOptions: {},
           blurredOptions: {},
           jpgOptions: {},
@@ -53,7 +57,7 @@ module.exports = {
         },
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-image`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-image",
   ],
 };

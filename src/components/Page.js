@@ -19,16 +19,15 @@ const styles = theme => ({
     textAlign: "center",
   },
   cardMedia: {
-    backgroundColor: 'transparent',
-    justifyContent: 'center'
+    backgroundColor: "transparent",
+    justifyContent: "center"
   },
   img: {
-    width: '100%',
+    width: "100%",
   }
 });
 
 const Component = ({ children, classes, title, image }) => {
-  console.log(image)
   return (
     <>
       <Header />
@@ -40,11 +39,11 @@ const Component = ({ children, classes, title, image }) => {
       >
         <Grid className={classes.contentBox} item>
           {title ? (
-          <Card elevation={0} style={{backgroundColor: 'transparent', justifyContent: 'center'}}>
+          <Card elevation={0} style={{backgroundColor: "transparent", justifyContent: "center", margin: "15px"}}>
             <CardMedia
               className={classes.cardMedia}
             >
-              <GatsbyImage image={image} alt="sang + sagebrush logo" />
+              <GatsbyImage alt="sand + sagebrush logo" image={image} />
             </CardMedia>
           </Card>
           ) : null}

@@ -25,7 +25,7 @@ const Salon = props => {
 
 export const query = graphql`
   query {
-    allFile(filter: {extension: {eq: "jpg"}, absolutePath: {regex: "/salon/"}}) {
+    allFile(filter: {extension: {eq: "jpg"}, absolutePath: {regex: "/salon/images/"}}) {
       edges {
         node {
           childImageSharp {

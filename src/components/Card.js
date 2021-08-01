@@ -26,14 +26,15 @@ const MyCard = ({
   action,
   style = {},
 }) => (
-  <Card style={style} className={classes.cardFont}>
+  <Card className={classes.cardFont} style={style} >
     <CardHeader
       avatar={avatar ? avatar : null}
-      subheader={subheader ? subheader : null}
-      title={title}
       classes={{
         title: classes.cardFont
-      }} 
+      }}
+      subheader={subheader ? subheader : null}
+      title={title}
+
     />
     <CardContent className={classes.cardFont}>{children}</CardContent>
     <CardActions className={classes.cardActions, classes.cardFont}>{action}</CardActions>
