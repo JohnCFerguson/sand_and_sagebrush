@@ -1,7 +1,6 @@
 import withRoot from "../../utils/withRoot";
 import React from "react";
-import { Link, graphql, withPrefix } from "gatsby";
-import Typography from "@material-ui/core/Typography";
+import { Link, graphql, } from "gatsby";
 import SEO from "../../components/SEO";
 import Page from "../../components/Page";
 import GridList from "@material-ui/core/GridList";
@@ -15,7 +14,7 @@ const Team = props => {
     <Page title="Meet the Team">
       <SEO title="Meet the Team" />
 
-      <GridList cellHeight={'auto'} cols={1}>
+      <GridList cellHeight={"auto"} cols={1}>
         {teams.map(edge => {
           const {
             node: {
@@ -31,7 +30,7 @@ const Team = props => {
           return (
             <Link key={path} to={path}>
               <GridListTile cols={1}>
-                <GatsbyImage image={tempImage} alt={title} />
+                <GatsbyImage alt={title} image={tempImage} />
                 <GridListTileBar
                   subtitle={jobtitle}
                   title={title}

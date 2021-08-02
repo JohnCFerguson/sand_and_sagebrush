@@ -9,7 +9,7 @@ module.exports = {
     },
     development: {
       company: "Unfergettable Designs, LLC",
-      devEmail: "john@unfergettabledesigns.com"
+      devEmail: "john.ferguson@unfergettabledesigns.com"
     },
     menuLinks: [
       {

@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import { Instagram, } from "mdi-material-ui";
 import withStyles from "@material-ui/styles/withStyles";
-import './../css/typography.css';
+import "./../css/typography.css";
 
 const styles = theme => ({
   menuButton: {

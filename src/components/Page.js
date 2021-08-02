@@ -1,13 +1,12 @@
 import React from "react";
-import { Link, withPrefix } from "gatsby";
-import { Card, CardMedia, Grid, Typography } from "@material-ui/core";
+import { Card, CardMedia, Grid, } from "@material-ui/core";
 import withStyles from "@material-ui/styles/withStyles";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, } from "gatsby-plugin-image";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../css/style.styl";
 
-const styles = theme => ({
+const styles = ({
   container: {
     marginTop: 94,
   },

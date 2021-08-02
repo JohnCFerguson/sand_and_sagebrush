@@ -2,23 +2,21 @@
 import { SheetsRegistry } from "jss";
 import { createTheme } from "@material-ui/core/styles";
 import { createGenerateClassName } from "@material-ui/styles";
-import purple from "@material-ui/core/colors/purple";
-import green from "@material-ui/core/colors/green";
-import "../css/typography.css"
+import "../css/typography.css";
 
 // A theme with custom primary and secondary color.
 // It's optional.
 const theme = createTheme({
   palette: {
     primary: {
-      light: '#f1dcd4',
-      main: '#f1dcd4',
-      dark: '#f1dcd4'
+      light: "#f1dcd4",
+      main: "#f1dcd4",
+      dark: "#f1dcd4"
     },
     secondary: {
-      light: '#8a807b',
-      main: '#8a807b',
-      dark: '#8a807b',
+      light: "#8a807b",
+      main: "#8a807b",
+      dark: "#8a807b",
     },
   },
   typography: {
