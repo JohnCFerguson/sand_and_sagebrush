@@ -4,3 +4,8 @@ public/
 .DS_Store
 yarn-error.log
 yarn.lock
+not_used_pages/
+highlights/
+
+# Local Netlify folder
+.netlify

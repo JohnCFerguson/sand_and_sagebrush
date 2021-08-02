@@ -1,15 +1,15 @@
 import React from "react";
-import Chip from "@material-ui/core/Chip";
+import { Link } from "gatsby";
+import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
-import Avatar from "@material-ui/core/Avatar";
 import withStyles from "@material-ui/styles/withStyles";
-import { Robot } from "mdi-material-ui";
 
 const styles = theme => ({
   featureChip: {
-    fontSize: "16px",
+    fontSize: "48px",
     backgroundColor: "#fff",
     border: "1pt solid #eee",
+    padding: "25px"
   },
   featureChipRight: {
     fontSize: "16px",
@@ -18,7 +18,8 @@ const styles = theme => ({
     float: "right",
   },
   featureGrid: {
-    marginBottom: "25px",
+    marginBottom: "0px",
+    marginTop: "0px"
   },
   avi: {
     width: "40px",
@@ -33,29 +34,14 @@ const HomeFeatures = props => {
       className={props.classes.featureGrid}
       container
       justify="center"
-      spacing={8}
+      spacing={5}
     >
-      <Grid item md={6}>
-        <Chip
-          avatar={
-            <Avatar className={props.classes.avi}>
-              <Robot />
-            </Avatar>
-          }
-          className={props.classes.featureChipRight}
-          label="Uses Material UI"
-        />
-      </Grid>
-      <Grid item md={6}>
-        <Chip
-          avatar={
-            <Avatar className={props.classes.avi}>
-              <Robot />
-            </Avatar>
-          }
-          className={props.classes.featureChip}
-          label="Uses Material Icons"
-        />
+      <Grid item>
+        <Link key="bookNow" to="/book">
+          <Button color="secondary" size="large" variant="outlined">
+            Book Now
+          </Button>
+        </Link>
       </Grid>
     </Grid>
   );

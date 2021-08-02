@@ -8,15 +8,22 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import { withPrefix } from "gatsby";
 import withStyles from "@material-ui/styles/withStyles";
+import "../css/typography.css";
 
-const styles = {
+const styles = theme => ({
   paper: {
     padding: "25px",
+    margin: "42px"
   },
   image: {
     width: "100%",
   },
-};
+  pageFont: {
+    fontFamily: "StayClassyDuoSerif",
+    textAlign: "center",
+    color: theme.palette.secondary.dark,
+  }
+});
 
 const Detail = ({ classes, data }) => {
   const {
@@ -40,13 +47,13 @@ const Detail = ({ classes, data }) => {
             <img alt="" className={classes.image} src={withPrefix(publicURL)} />
           </Grid>
           <Grid item md={8} xs={12}>
-            <Typography component="h2" gutterBottom variant="h2">
+            <Typography className={classes.pageFont} component="h2" gutterBottom variant="h2">
               {title}
             </Typography>
-            <Typography component="h5" gutterBottom variant="h5">
+            <Typography className={classes.pageFont} component="h5" gutterBottom variant="h5">
               {jobtitle}
             </Typography>
-            <Typography dangerouslySetInnerHTML={{ __html: html }} />
+            <Typography className={classes.pageFont} dangerouslySetInnerHTML={{ __html: html }} />
           </Grid>
         </Grid>
       </Paper>

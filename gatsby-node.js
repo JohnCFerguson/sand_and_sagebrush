@@ -1,5 +1,5 @@
-const path = require("path"),
-  fs = require("fs");
+const path = require("path");
+const fs = require("fs");
 
 // Create pages from markdown files.
 exports.createPages = ({ graphql, actions }) => {
@@ -35,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
             ? // Use specific template for item, e.g., products.js, if it exists.
               path.resolve(`src/templates/${item}.js`)
             : // Or use general template.
-              path.resolve(`src/templates/general.js`);
+              path.resolve("src/templates/general.js");
           return createPage({
             component,
             path: node.frontmatter.path,

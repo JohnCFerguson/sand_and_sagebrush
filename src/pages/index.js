@@ -1,84 +1,47 @@
 import withRoot from "../utils/withRoot";
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql, } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 import SEO from "../components/SEO";
-import Card from "../components/Card";
 import Page from "../components/Page";
 import HomeFeatures from "../components/HomeFeatures";
-import Button from "@material-ui/core/Button";
-import Carousel from "../components/Carousel";
-import Avatar from "@material-ui/core/Avatar";
-import { Gift } from "mdi-material-ui";
 import withStyles from "@material-ui/styles/withStyles";
+import "./../css/typography.css";
 
 const styles = () => ({
   root: {
     fontWeight: "bold",
+    fontFamily: "StayClassyDuoSerrif"
   },
 });
+
 const Home = props => {
-  const products = props.data.allMarkdownRemark.edges;
+  const logoImg = getImage(props.data.allFile.edges[0].node);
   return (
-    <Page title="Gatsby Material UI Business Starter">
+    <Page image={logoImg} title="The Beautiful Sand and Sagebrush Salon and Spa">
       <SEO title="Home">
         <meta
-          content="Beautiful Gatsby Material UI Business Starter. Tiny code. Well organized. Ready to customize and go."
+          content="Welcome to Sand and Sagebrush, an Aveda salon located right in the heart of downtown Elko Nevada. At Sand and Sagebrush our mission is to always provide our guests with a one of a kind service. Through thoughtful care,  kindness, and attention to detail our goal is ensure an experience and environment where confidence and self love are abundant."
           name="description"
         />
       </SEO>
 
       <HomeFeatures />
-      <Card
-        action={
-          <Button
-            className={props.classes.root}
-            color="secondary"
-            component={Link}
-            to="/products"
-            variant="contained"
-          >
-            View All Products
-          </Button>
-        }
-        avatar={
-          <Avatar>
-            <Gift />
-          </Avatar>
-        }
-        style={{ minHeight: 523 }}
-        title="Our Products"
-      >
-        <Carousel items={products} />
-      </Card>
+
     </Page>
   );
 };
 
 export const query = graphql`
-  query {
-    allFile(filter: { extension: { eq: "jpg" } }) {
-      edges {
-        node {
-          publicURL
-        }
-      }
-    }
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/products/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+  query LogoQuery {
+    allFile(
+      filter: {relativePath: {eq: "logos/S+S-Logo-0221_Full_Color_Logo_Vertical_Cropped.png"}}
     ) {
       edges {
         node {
-          id
-          frontmatter {
-            image {
-              publicURL
-            }
-            path
-            title
-            date(formatString: "DD MMMM YYYY")
+          childImageSharp {
+            gatsbyImageData
           }
-          excerpt
         }
       }
     }

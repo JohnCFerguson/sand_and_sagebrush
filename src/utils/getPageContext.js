@@ -1,23 +1,22 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
 import { SheetsRegistry } from "jss";
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import { createGenerateClassName } from "@material-ui/styles";
-import purple from "@material-ui/core/colors/purple";
-import green from "@material-ui/core/colors/green";
+import "../css/typography.css";
 
 // A theme with custom primary and secondary color.
 // It's optional.
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
-      light: purple[300],
-      main: purple[500],
-      dark: purple[700],
+      light: "#f1dcd4",
+      main: "#f1dcd4",
+      dark: "#f1dcd4"
     },
     secondary: {
-      light: green[300],
-      main: green[500],
-      dark: green[700],
+      light: "#8a807b",
+      main: "#8a807b",
+      dark: "#8a807b",
     },
   },
   typography: {
@@ -40,7 +39,7 @@ function createPageContext() {
 export default function getPageContext() {
   // Make sure to create a new context for every server-side request so that data
   // isn't shared between connections (which would be bad).
-  if (!process.browser) {
+  if (!typeof window !== "undefined") {
     return createPageContext();
   }
 
