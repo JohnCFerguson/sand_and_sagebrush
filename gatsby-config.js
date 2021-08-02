@@ -3,9 +3,9 @@ module.exports = {
   siteMetadata: {
     title: "Sand & Sagebrush Salon and Spa",
     contact: {
-      phone: "775 ... idk yet",
+      phone: "(775) 397-0932",
       email: "maddie@sandandsagebrush.com",
-      address: "431 Idaho St. Elko, NV 89801"
+      address: "461 Idaho St. Elko, NV 89801"
     },
     development: {
       company: "Unfergettable Designs, LLC",
