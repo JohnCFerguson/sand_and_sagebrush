@@ -46,7 +46,9 @@ const Footer = withStyles(styles)(props => {
             <Divider className={classes.divider} />
             Website developed by:
               <br />
-            {company} - <a href={`mailto:${devEmail}`}>{devEmail}</a>
+            {company}
+              <br />
+            <a href={`mailto:${devEmail}`}>{devEmail}</a>
           </Typography>
         </span>
       </footer>
