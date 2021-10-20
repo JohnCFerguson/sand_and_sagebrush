@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/sang_&_sagebrush",
+  pathPrefix: "",
   siteMetadata: {
     title: "Sand & Sagebrush Salon and Spa",
     contact: {
