@@ -1,2 +1,0 @@
-(self.webpackChunksand_and_sagebrush=self.webpackChunksand_and_sagebrush||[]).push([[883],{9616:function(e,t,n){"use strict";n.r(t);var a=n(8354),s=n(7294),u=n(9770);t.default=(0,a.Z)((function(){return s.createElement(u.Z,{title:"Not Found"},s.createElement("p",null,"Hey! You just hit a page that doesn't exist..."))}))}}]);
-//# sourceMappingURL=component---src-pages-404-js-f92a26211ed780614ea7.js.map
