@@ -126,7 +126,7 @@
     "indent": 0,
     "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
     "keyword-spacing": [2, {"before": true, "after": true}],
-    "linebreak-style": 2,
+    "linebreak-style": 0,
     "max-depth": 1,
     "max-len": [0, 120, 4],
     "max-nested-callbacks": 2,

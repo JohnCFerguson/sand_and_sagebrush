@@ -5,13 +5,13 @@ import SEO from "../../components/SEO";
 import Page from "../../components/Page";
 import Iframe from "react-iframe";
 
-const Book = props => {
+const Book = () => {
   return (
     <Page title="Book your next appointment">
       <SEO title="Book your next appointment" />
       <GridList cellHeight={500} cols={1}>
           <Iframe
-display="initial"
+              display="initial"
               frameBorder="0"
               height="600px"
               id="bookingSite"
